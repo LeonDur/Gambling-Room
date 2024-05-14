@@ -217,7 +217,7 @@ input:focus::placeholder {
 }
 .playerBox {
   overflow: hidden;
-  background-color: #80008076;
+  background-color: #383737;
   padding: 10px;
   margin: 0 10px;
   border-radius: 5px;
@@ -268,7 +268,7 @@ input:focus::placeholder {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  background-color: #80008075;
+  background-color: #383737;
   padding: 13px;
   border-radius: 5px;
   position: relative;
@@ -293,7 +293,7 @@ input:focus::placeholder {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  background-color: #80008075;
+  background-color: #383737;
   padding: 13px;
   border-radius: 5px;
   position: relative;
@@ -326,7 +326,7 @@ input:focus::placeholder {
 }
 #leadSubmit {
   font-size: 16px;
-  background-color: #80008075;
+  background-color: #383737;
   padding: 13px;
   border-radius: 5px;
   position: relative;
