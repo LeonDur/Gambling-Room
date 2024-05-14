@@ -38,30 +38,7 @@ form {
   font-size: 38px;
   color: #000000;
 }
-#info-rules {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 9px 10px 6px 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #80008075;
-  color: #fefefe;
-  max-width: 50px;
-  max-height: 50px;
-  height: 78%;
-  width: 78%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-#info-rules:hover {
-  background-color: #7201728d;
-  transition: all 0.2s ease-in-out;
-}
-#info-rules:focus {
-  background-color: #5200528d;
-}
+
 #playerMenu {
   display: flex;
   justify-content: space-evenly;
@@ -181,15 +158,6 @@ input:focus::placeholder {
   color:white;
 }
 
-#submitBtn input:hover {
-  background-color: #464545;
-  transition: all 0.2s ease-in-out;
-}
-#submitBtn input:focus {
-  background-color: #464545;
-  transition: all 0.2s ease-in-out;
-}
-
 #submitBtn {
   margin-right: 15px;
 }
@@ -252,14 +220,7 @@ input:focus::placeholder {
   border: none;
   cursor: pointer;
 }
-.lockIn:hover {
-  background-color: #727272;
-  transition: all 0.2s ease-in-out;
-}
-.lockIn:focus {
-  background-color: #6a6a6a;
-  transition: all 0.2s ease-in-out;
-}
+
 .won {
   margin-left: -53%;
 }
@@ -280,14 +241,7 @@ input:focus::placeholder {
   cursor: pointer;
   pointer-events: auto;
 }
-#rollButton:hover {
-  background-color: #7201728d;
-  transition: all 0.2s ease-in-out;
-}
-#rollButton:focus {
-  background-color: #5200528d;
-  transition: all 0.2s ease-in-out;
-}
+
 #reroll {
   display: none;
   justify-content: center;
@@ -305,14 +259,7 @@ input:focus::placeholder {
   cursor: pointer;
   pointer-events: auto;
 }
-#reroll:hover {
-  background-color: #7201728d;
-  transition: all 0.2s ease-in-out;
-}
-#reroll:focus {
-  background-color: #5200528d;
-  transition: all 0.2s ease-in-out;
-}
+
 #bottom {
   width: 100%;
   display: flex;
@@ -338,14 +285,7 @@ input:focus::placeholder {
   cursor: pointer;
   pointer-events: auto;
 }
-#leadSubmit:hover {
-  background-color: #7201728d;
-  transition: all 0.2s ease-in-out;
-}
-#leadSubmit:focus {
-  background-color: #5200528d;
-  transition: all 0.2s ease-in-out;
-}
+
 #leaderboard {
   background-color: #848484;
   border-radius: 5px;
