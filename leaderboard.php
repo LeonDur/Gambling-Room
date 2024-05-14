@@ -30,6 +30,9 @@
             <div id=ndName></div>
         </div>
     </div>
+    <div backButton style="margin:auto; margin-top: 40%;text-align: center; ">
+        <button style="background-color: #383737; border-radius: 8px;width: 70px;height: 40px;"><a href="index.html">Back</a></button>
+    </div>
     <script>
         const firstPlace = "<?php echo $_POST['prvi']; ?>";
         const secondPlace = "<?php echo $_POST['drugi']; ?>";
