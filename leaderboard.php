@@ -1,43 +1,60 @@
+<?php
+        session_start();
+
+        $_SESSION["p1Score"];
+        $_SESSION["p2Score"];
+        $_SESSION["p3Score"];
+        $_SESSION["p1"];
+        $_SESSION["p2"];
+        $_SESSION["p3"];
+        $_SESSION["stevKoc"];
+        $_SESSION["stevMet"];
+        $_SESSION["stevVrz"];
+        $max=$_SESSION["p1Score"];
+
+        for($x=0;$x<3;$x++){
+            if($max<$_SESSION["p2Score"])
+                $max=$_SESSION["p2Score"];
+            else if($max<$_SESSION["p3Score"]){
+                $max=$_SESSION["p3Score"];
+            }
+        }
+?>
 <!DOCTYPE html>
-<html>
+<html lang="sl">
+	<head>
+        <title>The high table</title>
+		<meta charset="utf-8" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="slike/rdece.png">
+        <script src="js/konec.js"></script>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <title>Craps</title>
-    <script src="main.js"></script>
-</head>
-
-<body onload="leaderboardLoad()">
-    <div id="leaderboard">
-        <img src="assets/bronze.png" id="bronze" alt="bronze" width="10%" height="auto" style="position: absolute;
-    left: 100px;
-    top: 0px; transition: top 2.5s ease-in-out;">
-        <div id="third">
-            <div id=rdName></div>
+	</head>
+	<body onload="redirTimer()">
+        <h1>Results:</h1>
+        <div id="centerK">
+            <form name="Obrazec" id="Obrazec" method="post" autocomplete="off" action="game.php">
+                <div id="zmagovalec">
+                    <?php if($max==$_SESSION["p1Score"]){echo 'Congratulations '.$_SESSION["p1"].', you won!';} ?>
+                    <?php if($max==$_SESSION["p2Score"]){echo 'Congratulations '.$_SESSION["p2"].', you won!';} ?>
+                    <?php if($max==$_SESSION["p3Score"]){echo 'Congratulations '.$_SESSION["p3"].', you won!';} ?>
+                </div>
+                <div class="igralciK">
+                    <?php echo $_SESSION["p1"];  ?></br>
+                    <?php echo $_SESSION["p1Score"];  ?></br>
+                </div>
+                <div class="igralciK">
+                    <?php echo $_SESSION["p2"];  ?></br>
+                    <?php echo $_SESSION["p2Score"];  ?></br>
+                </div>
+                <div class="igralciK">
+                    <?php echo $_SESSION["p3"];  ?></br>
+                    <?php echo $_SESSION["p3Score"];  ?></br>
+                </div>
+                <div class="spodiK">
+                    You will be redirected in <span id="time">10</span> seconds.
+                </div>
+            </form>
         </div>
-        <img src="assets/gold.png" id="gold" alt="gold" width="10%" height="auto" style="position: absolute;
-    top: 0px; transition: top 1.5s ease-in-out;">
-        <div id="first">
-            <div id=stName></div>
-        </div>
-        <img src="assets/silver.png" id="silver" alt="silver" width="10%" height="auto" style="position: absolute;
-    left: 620px;
-    top: 0px; transition: top 2s ease-in-out;">
-        <div id="second">
-            <div id=ndName></div>
-        </div>
-    </div>
-    <div backButton style="margin:auto; margin-top: 40%;text-align: center; ">
-        <button style="background-color: #383737; border-radius: 8px;width: 70px;height: 40px;"><a href="index.html">Back</a></button>
-    </div>
-    <script>
-        const firstPlace = "<?php echo $_POST['prvi']; ?>";
-        const secondPlace = "<?php echo $_POST['drugi']; ?>";
-        const thirdPlace = "<?php echo $_POST['tretji']; ?>";
-    </script>
-</body>
-
+	</body>
 </html>

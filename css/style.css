@@ -1,0 +1,131 @@
+@font-face {
+    font-family: beqiner;
+    src: url('../fonts/beqiner/BEQINER.ttf');
+}
+@font-face {
+    font-family: marvello;
+    src: url('../fonts/marvello/Marvello-Regular.ttf');
+}
+@font-face {
+    font-family: rossena;
+    src: url('../fonts/rossena/Rossena.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:beqiner;
+    background-image: url('../slike/back4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(6, 6, 22);
+}
+#centerI,
+#centerK,
+#center{
+    position: fixed;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 900px;
+    height: 420px;
+    color: #756663;
+    background-color: #72301b;
+    border: 5px solid #180a05;
+    border-radius: 15px;
+    font-size: 35px;
+}
+#centerK{
+    height: 470px;
+}
+#igralci{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+label{
+    color:#9db4fe
+}
+.igralciK,
+.igralci{
+    margin: 5px;
+    width: 150px;
+    height: 200px;
+    padding: 20px 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    color:#9db4fe
+}
+.igralciK{
+    height: 100px;
+}
+#zmagovalec{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 100px;
+    border-radius: 7px;
+    color:#9db4fe
+}
+#kocke{
+    margin-top: 25px;
+    font-size: 35px;
+}
+.izb{
+    text-align: center;
+    width: 70px;
+    border-radius: 5px;
+}
+h1{
+    width: 1200px;
+    position: fixed;
+    font-size: 120px;
+    text-align: center;
+    color: #756663;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spodi{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 100px;
+    border-radius: 7px;
+    color:#9db4fe
+}
+.spodiK{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 730px;
+    height: 100px;
+    border-radius: 7px;
+    color:#9db4fe
+}
+input, select{
+    width: 170px;
+    height: 40px;
+    font-size: 25px;
+    color: #000000;
+}
+.kocke{
+    border:3px solid black;
+    margin:0 1px;
+    border-radius:5px;
+}
