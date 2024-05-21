@@ -4,7 +4,7 @@
         <title>The high table</title>
         <meta charset="utf-8" >
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/x-icon" href="slike/rdece.png">
+        <link rel="icon" type="image/x-icon" href="slike/kocka.png">
     </head>
     <body>
         <h1>The high table</h1>
